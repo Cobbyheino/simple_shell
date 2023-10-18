@@ -25,4 +25,9 @@ char *_strcat(char *, char *);
 char **_strtok1(char *str, char d)
 char **_strtok(char *str, char *d)
 
+int interactive(info_t *);
+int is_delim(char, char *);
+int _isalpha(int);
+int _atoi(char *);
+
 #endif
