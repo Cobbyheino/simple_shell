@@ -12,6 +12,7 @@
 #include <fcntl.h>
 #include <errno.h>
 
+
 int _strlen(char *);
 int _strcmp(char *, char *);
 char *_strcpy(char *, char *);
@@ -21,7 +22,7 @@ int _putchar(char);
 char *starts_with(const char *, const char *);
 char *_strcat(char *, char *);
 
-char **_strtok1(char *str, char id)
-char **_strtok(char *str, char *id)
+char **_strtok1(char *str, char d)
+char **_strtok(char *str, char *d)
 
 #endif

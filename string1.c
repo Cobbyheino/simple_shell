@@ -10,6 +10,7 @@
  */
 
 int _strcmp(char *s1, char *s2)
+
 {
 	int cmp;
 
@@ -35,6 +36,7 @@ int _strcmp(char *s1, char *s2)
  */
 
 int _strlen(char *s)
+
 {
 	int len = 0;
 
@@ -53,6 +55,7 @@ int _strlen(char *s)
  */
 
 char *_strcat(char *dest, char *src)
+
 {
 	char *p = dest;
 
@@ -78,6 +81,7 @@ char *_strcat(char *dest, char *src)
  * Return: pointer to destination
  */
 char *_strcpy(char *dest, char *src)
+
 {
 	int i = 0;
 

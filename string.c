@@ -1,3 +1,5 @@
+#include "shell.h"
+
 /**
  * _strdup - replicates a str
  * @str: str to be replicatd
@@ -5,9 +7,12 @@
  *
  * Return: ptr to the replicate str
  */
+
 char *_strdup(const char *str)
+
 {
 	char *ptr;
+
 	int i, len = 0;
 
 	if (str == NULL)
@@ -37,6 +42,7 @@ char *_strdup(const char *str)
  */
 
 char *starts_with(const char *haystack, const char *needle)
+
 {
 	while (*needle)
 		if (*needle++ != *haystack++)
@@ -54,6 +60,7 @@ char *starts_with(const char *haystack, const char *needle)
  */
 
 int _putchar(char c)
+
 {
 	static int x;
 	static char buf[WRITE_BUF_SIZE];
@@ -72,10 +79,10 @@ int _putchar(char c)
  *_puts - prints an input string
  *@str: the str to print
  *
- *
  * Return: void
  */
 void _puts(char *str)
+
 {
 	int i = 0;
 
