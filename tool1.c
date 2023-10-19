@@ -1,9 +1,8 @@
 #include "shell.h"
-
 /**
- * is_positive_number - Checks if a string represents a positive number
- * @str: The string to be checked
- * return: 0 or 1
+ * is_positive_number - makes a numb positive
+ * @str: string to change
+ * Return: only 1
  */
 
 int is_positive_number(char *str)
@@ -20,12 +19,14 @@ int is_positive_number(char *str)
 	return (1);
 }
 
+
 /**
- * _atoi - Converts a string to an integer
- * @str: The string to be converted
- * int _atoi(char *str)
- * Return: return 0
+ * _atoi - letters to integers
+ * @str: string to change
+ * Return: number
  */
+
+int _atoi(char *str)
 {
 	int i, num = 0;
 

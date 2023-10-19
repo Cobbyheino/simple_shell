@@ -1,9 +1,7 @@
 #include "shell.h"
-
 /**
  * freearrays - free memory blocks of array
  * @array: the array to be freed
- *
  * Return: freed block
  */
 
@@ -24,10 +22,11 @@ void freearrays(char **array)
 }
 
 /**
- * print_error - Prints an error message to standard error
- * @name: The name of the program
- * @cmd: The command that caused the error
- * @idx: The index of the command in the history
+ * print_error - prints error
+ * @name: name of err
+ * @cmd: command
+ * @idx: index
+ * Return: freed block
  */
 
 void print_error(char *name, char *cmd, int idx)
@@ -47,8 +46,10 @@ void print_error(char *name, char *cmd, int idx)
 }
 
 /**
- * _itoa - Converts an integer to a string
- * @n: The integer to be converted
+ * _itoa - alphabets to intergers
+ * @n: input
+ *
+ * Return: int
  */
 
 char *_itoa(int n)
@@ -74,11 +75,13 @@ char *_itoa(int n)
 }
 
 /**
- * reverse_string - Reverses a string in place
- * @str: The string to be reversed
- * @len: The length of the string
- * void reverse_string(char *str, int len)
+ * reverse_string - reverses string
+ * @str: string to be rever
+ * @len: length of str
+ *
  */
+
+void reverse_string(char *str, int len)
 {
 	char tmp;
 	int start = 0;
