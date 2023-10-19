@@ -55,6 +55,7 @@ int _strcmp(char *s1, char *s2)
 /**
  * _strlen - returns and checks the len of str
  * @s: str to be checked
+ *
  * Return: length of the str
  *
  */
