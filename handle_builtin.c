@@ -8,7 +8,7 @@
 int is_builtin(char *command)
 {
 	char *builtins[] = {
-		"exit", "env", "setenv", 
+		"exit", "env", "setenv",
 		"cd", NULL
 	};
 	int i;
@@ -18,7 +18,7 @@ int is_builtin(char *command)
 		if (_strcmp(command, builtins[i]) == 0)
 			return (1);
 	}
-	return (0);		
+	return (0);
 }
 
 /**
@@ -26,7 +26,7 @@ int is_builtin(char *command)
  * @command: command for function
  * @argv: arg vec
  * @status: sta of func
- * @int: index
+ * @idx: index
  * Return: null
  */
 
@@ -47,7 +47,7 @@ void handle_builtin(char **command, char **argv, int *status, int idx)
  * @command: command for function
  * @argv: arg vec
  * @status: sta of func
- * @int: index
+ * @idx: index
  * Return: null
  */
 
@@ -60,7 +60,7 @@ void exit_shell(char **command, char **argv, int *status, int idx)
 	{
 		if (is_positive_number(command[1]))
 		{
-			exit_value = _atoi(command[1]);	
+			exit_value = _atoi(command[1]);
 		}
 		else
 		{
@@ -74,10 +74,9 @@ void exit_shell(char **command, char **argv, int *status, int idx)
 			free(index);
 			freearrays(command);
 			(*status) = 2;
-			return;			
+			return;
 		}
-		
-		
+
 	}
 	freearrays(command);
 	exit(exit_value);
@@ -87,13 +86,13 @@ void exit_shell(char **command, char **argv, int *status, int idx)
  * print_env - handles builtin func
  * @command: command for function
  * @status: sta of func
- * 
+ *
  * Return: null
  */
 void print_env(char **command, int *status)
 {
 	int i;
-	
+
 	for (i = 0; environ[i]; i++)
 	{
 		write(STDOUT_FILENO, environ[i], _strlen(environ[i]));
@@ -101,7 +100,7 @@ void print_env(char **command, int *status)
 	}
 	freearrays(command);
 	(*status) = 0;
-	
+
 }
 
 
